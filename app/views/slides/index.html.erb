@@ -24,10 +24,24 @@
       <div class='hello'>HELLO!</div>
       <%= link_to current_user.nickname, "#", class:  "user-nickname"%>
     </div>
-    <div class="hoge">
-      <div class="nest-hoge">aaa</div>
-      <div class="nest-hoge">bbb</div>
-      <div class="nest-hoge">ccc</div>
+    <div class="previews">
+      <div class="slider">
+      <%= image_tag 'home-image' %>
+      <%= image_tag 'sample' %>
+      <%= image_tag 'sample2' %>
+      </div>
     </div>
-    <h1>a</h1>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+ 
+    <script type="text/javascript">
+ $('.slider').slick({
+  slidesToShow: 1,
+  slidesToScroll:1,
+  autoplay: true,
+  autoplaySpeed: 4000,
+// 画像下のドット（ページ送り）を表示
+  dots:true,
+});
+  </script>
   <%end%>
