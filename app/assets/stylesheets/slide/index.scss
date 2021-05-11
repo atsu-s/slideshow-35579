@@ -17,10 +17,10 @@
   padding-top: 20px;
 }
 
-.login {
+.login, .logout{
   color: white;
-  border: solid 3px white;
   font-size: 20px;
+  border: solid 3px white;
   text-decoration: none;
   padding: 10px;
   margin-right: 50px;
@@ -71,4 +71,18 @@
 
   padding: 40px;
   margin-top: 10%;
+}
+.greeting {
+  display: flex;
+}
+
+.hello {
+  color: black;
+  font-size: 30px;
+  text-decoration: none;
+  margin: 0 10px;
+}
+.user-nickname {
+  color: black;
+  font-size: 30px;
 }
