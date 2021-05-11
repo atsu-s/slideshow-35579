@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
-  get 'tops/index'
-  root "tops#index"
+  get 'slides/index'
+  root "slides#index"
   devise_for :users
 
-  resources :user
+  resources :slide
 
 end
